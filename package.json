@@ -1,0 +1,17 @@
+{
+  "name": "deepak-luddu-cv",
+  "version": "1.0.0",
+  "description": "Personal CV website with AI chat widget",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "ai": "^5.0.0",
+    "@ai-sdk/gateway": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
