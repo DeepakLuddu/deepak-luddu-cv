@@ -1,4 +1,4 @@
-# Deepak Luddu — Personal CV Website
+# Deepak Luddu's Personal CV Website
 
 Live site: **[deepak-luddu.vercel.app](https://deepak-luddu.vercel.app)**
 
@@ -6,7 +6,7 @@ A modern, dark-mode personal website with an embedded AI chat assistant. Built a
 
 ## Stack
 
-- **Frontend:** Hand-written HTML, CSS, vanilla JavaScript — no framework, no build step
+- **Frontend:** Hand-written HTML, CSS, and vanilla JavaScript, with no framework and no build step
 - **Typography:** Inter + Space Grotesk (Google Fonts)
 - **Hosting:** [Vercel](https://vercel.com) (Edge CDN, automatic HTTPS, serverless functions)
 - **AI Chat:** [Vercel AI SDK](https://sdk.vercel.ai) + [Vercel AI Gateway](https://vercel.com/ai-gateway) routing to Anthropic Claude Haiku
@@ -15,10 +15,10 @@ A modern, dark-mode personal website with an embedded AI chat assistant. Built a
 
 ## Features
 
-- **AI chat assistant** ("Ask about my experience") — a floating chat widget that uses Claude Haiku via the Vercel AI Gateway to answer questions about my career, drawing only from my CV context. Includes rate limiting, abuse protection, and strict behavioral guardrails (never invents information, deflects commercial/personal questions, points to contact form for direct outreach).
-- **Modern Tech aesthetic** — dark mode, gradient accents, generous whitespace, responsive layout
-- **Performance-first** — no framework runtime, no analytics, no tracking pixels; pages load in under 300ms from global CDN
-- **Privacy-respectful** — hidden from search engines, contact form routes through Formspree without exposing email address
+- **AI chat assistant** ("Ask about my experience"): a floating chat widget that uses Claude Haiku via the Vercel AI Gateway to answer questions about my career, drawing only from my CV context. Includes rate limiting, abuse protection, and strict behavioral guardrails (never invents information, deflects commercial/personal questions, points to contact form for direct outreach).
+- **Modern Tech aesthetic**: dark mode, gradient accents, generous whitespace, responsive layout
+- **Performance-first**: no framework runtime, no analytics, no tracking pixels; pages load in under 300ms from global CDN
+- **Privacy-respectful**: hidden from search engines, contact form routes through Formspree without exposing email address
 
 ## Structure
 
@@ -29,7 +29,7 @@ cv-website/
 ├── script.js         Smooth scroll + reveal-on-scroll
 ├── chat.js           AI chat widget client (streaming UI)
 ├── api/
-│   └── chat.js       Vercel serverless function (edge runtime) — calls Claude via AI Gateway
+│   └── chat.js       Vercel serverless function (edge runtime) that calls Claude via AI Gateway
 ├── package.json      Declares ai + @ai-sdk/gateway dependencies
 ├── headshot.jpg      Profile photo
 ├── vercel.json       Vercel config (clean URLs, X-Robots-Tag header)
@@ -39,10 +39,10 @@ cv-website/
 
 ## Design principles
 
-- **Restraint over decoration** — clean type, generous whitespace, single accent gradient
-- **Mobile-first responsive** — stat cards collapse 3→2→1, chat goes fullscreen on mobile
-- **AI as a peer feature, not a gimmick** — the chat widget is positioned as a professional CV utility ("ask anything about Deepak's experience") rather than a novelty
-- **Strict AI guardrails** — never hallucinate, never share private contact details, always invite direct contact for sensitive questions
+- **Restraint over decoration**: clean type, generous whitespace, single accent gradient
+- **Mobile-first responsive**: stat cards collapse from 3 to 2 to 1, chat goes fullscreen on mobile
+- **AI as a peer feature, not a gimmick**: the chat widget is positioned as a professional CV utility ("ask anything about Deepak's experience") rather than a novelty
+- **Strict AI guardrails**: never hallucinate, never share private contact details, always invite direct contact for sensitive questions
 
 ## Running locally
 

@@ -160,7 +160,7 @@
       if (assistantText) {
         messages.push({ role: 'assistant', content: assistantText });
       } else {
-        // No text came through — replace placeholder with friendly fallback
+        // No text came through; replace placeholder with friendly fallback
         bubble.innerHTML = '';
         bubble.textContent = "I didn't catch a response that time. Could you try rephrasing?";
       }

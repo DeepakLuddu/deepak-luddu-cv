@@ -1,5 +1,5 @@
 // =========================================================
-// /api/chat — Vercel serverless function powering the chat widget
+// /api/chat: Vercel serverless function powering the chat widget
 // Stack: Vercel AI SDK + Vercel AI Gateway -> Anthropic Claude Haiku
 // =========================================================
 
