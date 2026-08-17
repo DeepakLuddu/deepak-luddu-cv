@@ -32,3 +32,20 @@ document.querySelectorAll('.summary-card, .stat-card, .job, .cred-card').forEach
   el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
   io.observe(el);
 });
+
+// Industry bars fill once on scroll into view
+const barIO = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      el.style.width = el.dataset.width;
+      barIO.unobserve(el);
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.industry-bar-fill').forEach(el => {
+  el.dataset.width = el.style.width;
+  el.style.width = '0';
+  barIO.observe(el);
+});
