@@ -40,7 +40,7 @@ cv-website/
 ## Design principles
 
 - **Restraint over decoration** — clean type, generous whitespace, single accent gradient
-- **Mobile-first responsive** — stat cards collapse 3→2→1, industries table converts to stacked layout below 640px, chat goes fullscreen on mobile
+- **Mobile-first responsive** — stat cards collapse 3→2→1, chat goes fullscreen on mobile
 - **AI as a peer feature, not a gimmick** — the chat widget is positioned as a professional CV utility ("ask anything about Deepak's experience") rather than a novelty
 - **Strict AI guardrails** — never hallucinate, never share private contact details, always invite direct contact for sensitive questions
 
